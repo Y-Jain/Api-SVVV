@@ -1,0 +1,67 @@
+{% load static %}
+{% include "exam/header.html" %}
+{% block content %}
+        <!-- Home -->
+        <section id="about-home">
+            <h2>Contact Us</h2>
+        </section>
+
+        <section id="contact">
+            
+            <div class="getin">
+                <h2>Get in touch</h2>
+                <p>Looking for help? Fill the form start a new adventure.</p>
+                
+                <div class="getin-details">
+                    <h3>Address</h3>
+                    <div>
+                        <i class="far fa-home get"></i>
+                        <p>Svvv ujjain road Indore(M.P)</p>
+                    </div>
+                    
+                    <h3>Phone</h3>
+                    <div>
+                        <i class="fas fa-phone alt get"></i>
+                        <p>1234567890 <br> 1234567890</p>
+                    </div>
+                    
+                    <h3>Support</h3>
+                    <div>
+                        <i class="fal fa-envelope-open-text get"></i>
+                        <p>svvv@support.com</p>
+                    </div>
+                    
+                    <h3>Follow us</h3>
+                    <div class="pro-links">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="form">
+                <h4>Let's connect</h4>
+                {% comment %} <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, laborum?</p> {% endcomment %}
+                <div class="form-row">
+                    <input type="text" placeholder="Your name">
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <div class="form-col">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="form-col">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="How can we help you "></textarea>
+                </div>
+                <div class="form-col">
+                    <button>Send Message</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117676.79402006012!2d75.69719169726561!3d22.824693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963039c587a8091%3A0x206d00d7a5e4afb3!2sShri%20Vaishnav%20Vidyapeeth%20Vishwavidyalaya!5e0!3m2!1sen!2sin!4v1711789369923!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+{% endblock %}
+{% include "exam/foot.html" %}

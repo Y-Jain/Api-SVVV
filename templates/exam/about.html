@@ -1,0 +1,90 @@
+{% load static %}
+{% include "exam/header.html" %}
+{% block content1 %}
+        <!-- Home -->
+        <section id="about-home">
+            <h2>About Svvv E-Learning</h2>
+           
+        </section>
+
+        <section id="about-container">
+            <!-- <section><div class="container reveal"></div></section> -->
+            {% comment %}  class="container2 reveal" {% endcomment %}
+            <div>
+                <div class="about-img">
+                    <img src="{% static "image/a.png" %}" alt="">
+                </div>
+
+                <div class="about-text">
+                    <h2>Welcome Svvv E-learning Platform.</h2>
+                    <p>We provide best platform to grasp and enhance your knowledge in different technological field through our best mentors </p>
+
+                    <div class="about-fe">
+                        <img src="{% static "image/fe1.png" %}" alt="">
+                        <div class="fe-text">
+                            <h5>5 Important Courses</h5>
+                            <p>AI</p>
+                            <p>Python</p>
+                            <p>ML</p>
+                            <p>Java</p>
+                            <p>Fullstack development</p>
+
+                        </div>
+                    </div>
+
+                    <div class="about-fe">
+                        <img src="{% static "image/fe2.png" %}" alt="">
+                        <div class="fe-text">
+                            <h5>Lifetime Access</h5>
+                            <p>SVVV Students can access platform through their login access</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- features -->
+        <section id="features">
+            {% comment %}  class="container reveal" {% endcomment %}
+            <div>
+                <h1>Awesome Features</h1>
+                <p>------------Line-------------</p>
+                <div class="fea-base">
+                    <div class="fea-box">
+                        <i class="bi bi-mortarboard-fill"></i>
+                        <h3>Scholarship Facility</h3>
+                        <p>One make creepeth man bearing theirs firmament great heaven</p>
+                    </div>
+                    <div class="fea-box">
+                        <i class="bi bi-mortarboard-fill"></i>
+                        <h3>Dell Online Course</h3>
+                        <p>One make creepeth man bearing theirs firmament great heaven</p>
+                    </div>
+                    <div class="fea-box">
+                        <i class="bi bi-mortarboard-fill"></i>
+                        <h3>Global Certification</h3>
+                        <p>One make creepeth man bearing theirs firmament great heaven</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Trusted -->
+        <section id="trust">
+            {% comment %}  class="container reveal" {% endcomment %}
+            <div>
+                <h1>Trusted By</h1>
+                <p>Shri Vaishnav Trust</p>
+                <div class="trust-img">
+                    <img src="{% static "image/trust (1).png" %}" alt="">
+                    <img src="{% static "image/trust (2).png" %}" alt="">
+                    <img src="{% static "image/trust (3).png" %}" alt="">
+                    <img src="{% static "image/trust (4).png" %}" alt="">
+                    <img src="{% static "image/trust (5).png" %}" alt="">
+                    <img src="{% static "image/trust (6).png" %}" alt="">
+                </div>
+            </div>
+        </section>
+{% endblock %}
+{% include "exam/foot.html" %}

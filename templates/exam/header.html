@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVVV VERVE</title>
+    <link rel="stylesheet" href={% static 'style.css' %}>
+    {% comment %} <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> {% endcomment %}
+    <script src="https://kit.fontawesome.com/9d6d383f2c.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'script.js' %}"></script>
+  </head>
+  <body>
+     <!-- Navigation -->
+     <nav>
+      <a href="{% url 'svvv' %}"><img src="{% static "image/logo.png" %}" alt=""></a>
+      <div class="navigation">
+          <ul>
+              <i id="menu-close" class="fas fa-times"></i>
+              <li class="{% if request.path == 'svvv' %} active {% endif %}"><a href="{% url 'svvv' %}">Home</a></li>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'blog' %}">Blog</a></li>
+              <li><a href="{% url 'course' %}">Courses</a></li>
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+              <li><a href="{% url 'Exam' %}">Exam</a></li>
+          </ul>
+          <img id="menu-btn" src="{% static "image/menu.png" %}" alt="">
+      </div>
+  </nav>
+</body>
+</html>

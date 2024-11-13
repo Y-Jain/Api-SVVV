@@ -1,0 +1,118 @@
+{% load static %}
+{% include "exam/header.html" %}
+{% block content %}
+<link rel="stylesheet" href={% static 'style1.css' %}>
+        
+
+        <section class="faq-sec">
+
+            <div class="lecture">
+                <div class="lec-h"><h2>Dictionary & Set in Python</h2></div>
+                <div class="lec-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/078tYSD7K8E?si=KUKC6WzTEHuEk_v0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="next-button">
+                    <button onclick="window.location.href='{% url 'lecture3' %}'">Previous</button> 
+                    <button onclick="window.location.href='{% url 'lecture5' %}'">Next</button>
+                </div>
+            </div>
+            
+            <div class="container">
+                <h2 class="heading">Content</h2>
+                <div class="faq">
+                    <div class="question">
+                        <h3>What is python and its variables and types?</h3>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+    
+                    <div class="answer">
+                        <a href="{% url 'lecture1' %}"> Link <br> <span>Duration: 1:22:00 hr</span></a>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <div class="question">
+                        <h3>String & Conditional Statment</h3>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+    
+                    <div class="answer">
+                        <a href="{% url 'lecture2' %}"> Link <br> <span>Duration: 55:41 min</span></a>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <div class="question">
+                        <h3>List & Tuple</h3>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+    
+                    <div class="answer">
+                        <a href="{% url 'lecture3' %}"> Link <br> <span>Duration: 41:46 min</span></a>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <div class="question">
+                        <h3>Dicitionay & Set in</h3>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+    
+                    <div class="answer">
+                        <a href="{% url 'lecture4' %}"> Link <br> <span>Duration: 54:32 min</span></a>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <div class="question">
+                        <h3>Loops</h3>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+    
+                    <div class="answer">
+                        <a href="{% url 'lecture5' %}"> Link <br> <span>Duration: 1:03:51 hr</span></a>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <div class="question">
+                        <h3>Function & Recursion</h3>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+    
+                    <div class="answer">
+                        <a href="{% url 'lecture6' %}"> Link <br> <span>Duration: 1:01:48 hr</span></a>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <div class="question">
+                        <h3>File Input/Output</h3>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+    
+                    <div class="answer">
+                        <a href="{% url 'lecture7' %}"> Link <br> <span>Duration: 50:48 min</span></a>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+
+
+{% endblock %}
+{% include "exam/foot.html" %}

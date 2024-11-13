@@ -1,0 +1,222 @@
+{% load static %}
+{% include "exam/header.html" %}
+{% block content %}
+  <!-- home -->
+<section id="home">
+    {% comment %} <img src="{% static "image/bg.jpeg" %}"> {% endcomment %}
+   <h2>Enchance Your Future With Svvv E-Learning</h2>
+    <p>1884 is the landmark year as the foundation stone was laid 140 years ago for Shri Vaishnav Group of Institutions by compassionate cloth merchants of Vaishnav cult of Indore, which was later rechristened as Shri Vaishnav Sahayak Kapada Market Committee in the year 1934.
+
+        Shri Vaishnav Vidyapeeth Trust believes in taking the nation forward by improving the quality of life of its citizens by continuously working in the sphere of education, health and environment. It has been established to promote education and research in various disciplines through academic institutions for the benefits of all sections of the society, but not with the motive of profit.
+        
+        </p>
+    <div class="btn">
+        <a href="{% url 'about' %}" class="blue">Learn More</a>
+        <a href="{% url 'course' %}" class="yellow">Visit Courses</a>
+    </div>
+</section>
+<section id="features">
+  {% comment %} container reveal {% endcomment %}
+  <div>
+  <h1>Awesome Features</h1>
+      <p>------------Line-------------</p>
+      <div class="fea-base">
+          <div class="fea-box">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3>Scholarship Facility</h3>
+              <p>One make creepeth man bearing theirs firmament great heaven</p>
+          </div>
+          <div class="fea-box">
+              <i class="fa-solid fa-school"></i>
+              <h3>Dell Online Course</h3>
+              <p>One make creepeth man bearing theirs firmament great heaven</p>
+          </div>
+          <div class="fea-box">
+              <i class="fa-solid fa-file"></i>
+              <h3>Global Certification</h3>
+              <p>One make creepeth man bearing theirs firmament great heaven</p>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="course">
+  {% comment %} class="container reveal" {% endcomment %}
+  <div>
+  <h1>Our Popular Course</h1>
+      <p>------------Line-------------</p>
+      <dic class="course-box">
+          <div onclick="window.location.href='course/webdev.html'" class="courses">
+              <img src="{% static "image/c1.jpg" %}" alt="">
+              <div class="details">
+                  <span>------------Line-------------</span>
+                  <h6>Web Developmentt</h6>
+                  <span>------About------</span>
+                  <!-- <div class="cost"> Free</div> -->
+              </div>
+          </div>
+
+          <div onclick="window.location.href='course/java.html'" class="courses">
+              <img src="{% static "image/c2.jpg" %}" alt="">
+              <div class="details">
+                  <span>------------Line-------------</span>
+                  <h6>Java Core+Advance</h6>
+                  <span>------About------</span>
+                  <!-- <div class="cost"> Free</div> -->
+              </div>
+          </div>
+
+          <div onclick="window.location.href='course/py.html'" class="courses">
+              <img src="{% static "image/c3.jpg" %}" alt="">
+              <div class="details">
+                  <span>------------Line-------------</span>
+                  <h6>Python</h6>
+                  <span>------About------</span>
+                  <!-- <div class="cost"> Free</div> -->
+              </div>
+          </div>
+          
+          <div onclick="window.location.href='course/ds.html'" class="courses">
+              <img src="{% static "image/c4.jpg" %}" alt="">
+              <div class="details">
+                  <span>------------Line-------------</span>
+                  <h6>Data Science</h6>
+                  <span>------About------</span>
+                  <!-- <div class="cost"> Free</div> -->
+              </div>
+          </div>
+
+          <div onclick="window.location.href='course/mob-comput.html'" class="courses">
+              <img src="{% static "image/c5.jpg" %}" alt="">
+              <div class="details">
+                  <span>------------Line-------------</span>
+                  <h6>Mobile Computing</h6>
+                  <span>------About------</span>
+                  <!-- <div class="cost"> Free</div> -->
+              </div>
+          </div>
+
+          <div onclick="window.location.href='course/ai/ai.html'" class="courses">
+              <img src="{% static "image/c6.jpg" %}" alt="">
+              <div class="details">
+                  <span>------------Line-------------</span>
+                  <h6>Artifical Intelligence</h6>
+                  <span>------About------</span>
+                  <!-- <div class="cost">Free</div> -->
+              </div>
+          </div>
+
+          
+      </div>        
+
+
+  </div>
+</section>
+<section id="registration">
+  <div class="reminder">
+      <p>Visit our Courses </p>
+      <h1>Register Now!</h1>
+      
+      <div class="time">
+          
+          <div class="date">
+              - <br> Days
+          </div>
+
+          <div class="date">
+              - <br> Hours
+          </div>
+
+          <div class="date">
+              - <br> Minutes
+          </div>
+
+          <div class="date">
+              - <br> Seconds
+          </div>
+      </div>
+  </div>
+
+  <div class="form">
+      <h3>Create Free Acount Now!</h3>
+      <input type="text" placeholder="Name" name="" id="" required>
+      <input type="text" placeholder="Email Address" name="" id="" required>
+      <input type="text" placeholder="Phone Number" name="" id="" required>
+      <div class="btn">
+          <a href="#" class="yellow">Submit Form</a>
+      </div>
+  </div>
+</section>
+<section id="experts">
+  {% comment %}  class="container reveal" {% endcomment %}
+  <div>
+  <h1>Community Expert</h1>
+      <p>More than 5+ Year Experirnce</p>
+      <div class="expert-box">
+
+          <div class="profile">
+              <img src="{% static "image/prop1.png" %}" alt="">
+              <h5>Ram Kumar</h5>
+              <p>Python</p>
+              <div class="pro-links">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-linkedin-in"></i>
+              </div>
+          </div>
+
+          <div class="profile">
+              <img src="{% static "image/prop1.png" %}" alt="">
+              <h5>James Fransis</h5>
+              <p>Web development</p>
+              <div class="pro-links">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-linkedin-in"></i>
+              </div>
+          </div>
+
+          <div class="profile">
+              <img src="{% static "image/prop1.png" %}" alt="">
+              <h5>Akshay Rai</h5>
+              <p>Fullstack Developer</p>
+              <div class="pro-links">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-linkedin-in"></i>
+              </div>
+          </div>
+
+          <div class="profile">
+              <img src="{% static "image/prop1.png" %}" alt="">
+              <h5>Umang Khanna</h5>
+              <p>Mern Stack</p>
+              <div class="pro-links">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-linkedin-in"></i>
+              </div>
+          </div>
+      </div>
+  
+  </div>
+</section>
+{% comment %} {% endblock %} {% endcomment %}
+    {% comment %} <footer>
+      <div class="copyright">
+          <p>Copyright © 2008 Svvv E-Leaning</p>
+              <div class="pro-links">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-linkedin-in"></i>
+              </div>
+      </div>
+  </footer>
+    <!-- <section><div class="container reveal"></div></section> -->
+
+
+    <script src="script.js"></script>
+
+  </body>
+</html> {% endcomment %}
+{% endblock %}
+{% include "exam/foot.html" %}

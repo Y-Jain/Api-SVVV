@@ -1,0 +1,58 @@
+{% load static %}
+{% include "exam/header.html" %}
+{% block content %}
+        <section id="about-home">
+            <h2>Blog</h2> 
+        </section>
+
+        <section id="blog-container">
+                <!-- <section><div class="container reveal"></div></section> -->
+                {% comment %} class="container1 reveal" {% endcomment %}
+            <div>            
+                <div class="blogs">
+                <div class="post">
+                    <img src="{% static "image/b1.jpg" %}" alt="">
+                    <h3>Leaning Web Development</h3>
+                    <p>Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.</p>
+                    <a href="{% url 'post1' %}">Read More</a>
+                </div>
+                <div class="post">
+                    <img src="{% static "image/b2.jpg" %}" alt="">
+                    <h3>Leaning Python</h3>
+                    <p>Python is a high-level, general-purpose, and very popular programming language. Python programming language (latest Python 3) is being used in web development, and Machine Learning applications, along with all cutting-edge technology in Software Industry. Python language is being used by almost all tech-giant companies like – Google, Amazon, Facebook, Instagram, Dropbox, Uber… etc.
+                    </p>
+                    <a href="{% url 'post2' %}">Read More</a>
+                </div>
+                <div class="post">
+                    <img src="{% static "image/b3.jpg" %}" alt="">
+                    <h3>Leaning Java</h3>
+                    <p>Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
+
+                        Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.
+
+                    </p>
+                    <a href=""{% url 'post3' %}"">Read More</a>
+                </div>
+
+                </div>
+
+                <div class="cate">
+                    <h2>Categories</h2>
+                    <hr>
+                    <a href="*">Web Development</a>
+                    <hr>
+                    <a href="*">Fullstack Development</a>
+                    <hr>
+                    <a href="*">Mern Stack</a>
+                    <hr>
+                    <a href="*">Python</a>
+                    <hr>
+                    <a href="*">Ruby</a>
+                    <hr>
+                    <a href="*">Java</a>
+                </div>
+            </div>
+
+        </section>
+{% endblock %}
+{% include "exam/foot.html" %}

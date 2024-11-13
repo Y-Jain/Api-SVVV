@@ -1,0 +1,75 @@
+{% load static %}
+{% include "exam/header.html" %}
+{% block content %}
+        <!-- Home -->
+        <section id="about-home">
+            <h2>Python</h2>
+           
+        </section>
+
+        <section id="course-inner">
+            <div class="overview">
+                <img class="c-img" src="{% static "image/c1.jpg" %}" alt="">
+                <div class="course-head">
+                    <div class="cname">
+                        <h2>Python</h2>
+                        <p>Python is a high-level, general-purpose, and very popular programming language. Python programming language (latest Python 3) is being used in web development, and Machine Learning applications, along with all cutting-edge technology in Software Industry. Python language is being used by almost all tech-giant companies like – Google, Amazon, Facebook, Instagram, Dropbox, Uber… etc.</p>
+
+                    </div>
+                    <span>Free</span>
+                </div>
+                <h3>Instructor</h3>
+                <div class="tutor">
+                    <img src="{% static "image/c4.jpg" %}" alt="">
+                    <div class="tutor-det">
+                        <h5>James</h5>
+                        <p>developer at google</p>
+                    </div>
+                </div>
+                <hr>
+                <h3>Course overview</h3>
+                <p>Welcome to the Python tutorial section! Here, we’ll cover the essential elements you need to kickstart your journey in Python programming. From syntax and keywords to comments, variables, and indentation, we’ll explore the foundational concepts that underpin Python development.
+
+                    Learn Python Basics
+                    Syntax
+                    Keywords in Python
+                    Comments in Python
+                    Learn Python Variables
+                    Learn Python Data Types
+                    Indentation and why is it important in Python <br>
+                <br>Acquire the pre-requisite Python skills to move into specific branches - Machine Learning, Data Science, etc..
+                Add the Python Object-Oriented Programming (OOP) skills to your résumé.
+                Understand how to create your own Python programs.
+                Learn Python from experienced professional software developers.
+                Understand both Python 2 and Python 3.
+            </p>
+            <hr>
+            <h3>What you'll learn</h3>
+            <div class="learn">
+                <p><i class="far fa-check-circle"></i>Python from Scartch</p>
+                <p><i class="far fa-check-circle"></i>Basic to advance</p>
+                <p><i class="far fa-check-circle"></i>Dsa with python</p>
+                <p><i class="far fa-check-circle"></i>AI in python</p>
+                <p><i class="far fa-check-circle"></i>ML in python</p>
+                <p><i class="far fa-check-circle"></i>IOT Devices</p>
+            </div>
+            </div>
+
+            <div class="enroll">
+                <h3>The Course include</h3>
+                <p><i class="far fa-video"></i> 52 hours video lecture</p>
+                <p><i class="far fa-newspaper"></i> Intresting article</p>
+                <p><i class="far fa-infinity"></i> Life time access</p>
+                <p><i class="far fa-paperclip"></i> Assignment</p>
+                <p><i class="far fa-trophy-alt"></i> Certificate of completion</p>
+                <div class="learn-btn">
+                    <a class="blue" href="{% url 'lecture1' %}" target="_blank">Start Learning</a>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+{% endblock %}
+{% include "exam/foot.html" %}

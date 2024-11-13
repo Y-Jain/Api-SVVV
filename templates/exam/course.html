@@ -1,0 +1,78 @@
+{% load static %}
+{% include "exam/header.html" %}
+{% block content %}
+        <!-- Courses -->
+        <!-- <section><div class="container reveal"></div></section> -->
+        <section id="course">
+            {% comment %} class="container reveal" {% endcomment %}
+            <div>
+                <h1>Our Popular Course</h1>
+                <p>------------Line-------------</p>
+
+                <div class="course-box">
+                    <div onclick="window.location.href='course/webdev.html'" class="courses">
+                        <img src="{% static "image/c1.jpg" %}" alt="">
+                        <div class="details">
+                            <span>------------Line-------------</span>
+                            <h6>Web Developmentt</h6>
+                            <span>------About------</span>
+                            <!-- <div class="cost"> Free</div> -->
+                        </div>
+                    </div>
+
+                    <div onclick="window.location.href='course/java.html'" class="courses">
+                        <img src="{% static "image/c2.jpg" %}" alt="">
+                        <div class="details">
+                            <span>------------Line-------------</span>
+                            <h6>Java Core+Advance</h6>
+                            <span>------About------</span>
+                            <!-- <div class="cost"> Free</div> -->
+                        </div>
+                    </div>
+
+                    <div onclick="window.location.href='{% url 'py' %}'" class="courses">
+                        <img src="{% static "image/c3.jpg" %}" alt="">
+                        <div class="details">
+                            <span>------------Line-------------</span>
+                            <h6>Python</h6>
+                            <span>------About------</span>
+                            <!-- <div class="cost"> Free</div> -->
+                        </div>
+                    </div>
+                    
+                    <div onclick="window.location.href='course/ds.html'" class="courses">
+                        <img src="{% static "image/c4.jpg" %}" alt="">
+                        <div class="details">
+                            <span>------------Line-------------</span>
+                            <h6>Data Science</h6>
+                            <span>------About------</span>
+                            <!-- <div class="cost"> Free</div> -->
+                        </div>
+                    </div>
+
+                    <div onclick="window.location.href='course/mob-comput.html'" class="courses">
+                        <img src="{% static "image/c5.jpg" %}" alt="">
+                        <div class="details">
+                            <span>------------Line-------------</span>
+                            <h6>Mobile Computing</h6>
+                            <span>------About------</span>
+                            <!-- <div class="cost"> Free</div> -->
+                        </div>
+                    </div>
+
+                    <div onclick="window.location.href='course/ai/ai.html'" class="courses">
+                        <img src="{% static "image/c6.jpg" %}" alt="">
+                        <div class="details">
+                            <span>------------Line-------------</span>
+                            <h6>Artifical Intelligence</h6>
+                            <span>------About------</span>
+                            <!-- <div class="cost">Free</div> -->
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+{% endblock %}
+{% include "exam/foot.html" %}
